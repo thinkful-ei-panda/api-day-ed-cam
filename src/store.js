@@ -16,21 +16,6 @@ function findAndUpdate(id,newData) {
   Object.assign(foundItem, newData);
 }
 
-// const findAndToggleChecked = function (id) {
-//   const currentItem = this.findById(id);
-//   currentItem.checked = !currentItem.checked;
-// };
-
-// const findAndUpdateName = function (id, name) {
-//   try {
-//     item.validateName(name);
-//     const currentItem = this.findById(id);
-//     currentItem.name = name;
-//   } catch (e) {
-//     console.log('Cannot update name: ' + e.message);
-//   }
-// };
-
 function findAndDelete(id) {
   this.items = this.items.filter(currentItem => currentItem.id !== id);
 }
@@ -44,8 +29,6 @@ export default {
   hideCheckeditems,
   findById,
   addItem,
-  // findAndToggleChecked,
-  // findAndUpdateName,
   findAndDelete,
   toggleCheckedFilter,
   findAndUpdate
